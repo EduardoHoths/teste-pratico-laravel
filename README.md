@@ -4,7 +4,7 @@
 
 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/teste-pratico-laravel.git
+git clone git@github.com:EduardoHoths/teste-pratico-laravel.git
 ```
 
 2. Entre na pasta do projeto
