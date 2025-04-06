@@ -34,5 +34,6 @@ php artisan migrate
 Quando solicitado, selecione "yes" para criar o arquivo SQLite.
 
 7. Acesse a aplicação
+
 A aplicação estará disponível em: http://localhost:8000
 
