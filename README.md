@@ -24,7 +24,7 @@ docker-compose exec laravel composer install
 
 5. Entre no container Laravel
 ```bash
-docker exec -it laravel bash
+docker exec -it teste-pratico bash
 ```
 
 6. Configure o banco de dados
@@ -37,3 +37,19 @@ Quando solicitado, selecione "yes" para criar o arquivo SQLite.
 
 A aplicação estará disponível em: http://localhost:8000
 
+## Como rodar os testes
+
+1. Entre no container Laravel
+```bash
+docker exec -it teste-pratico bash
+```
+
+2. Configure o banco de dados de teste
+```bash
+php artisan migrate --env=testing
+```
+
+3. Execute os testes
+```bash
+php artisan test
+```
