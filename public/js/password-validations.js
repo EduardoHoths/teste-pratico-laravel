@@ -24,7 +24,7 @@ function handleValidation() {
     }
 
     const validations = {
-        length: value.length >= 6,
+        length: value.length >= 8,
         uppercase: /[A-Z]/.test(value),
         lowercase: /[a-z]/.test(value),
         number: /[0-9]/.test(value),
