@@ -6,9 +6,6 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return Auth::check() ? redirect()->route('dashboard') : view('auth.login');
-})->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -27,4 +24,8 @@ Route::middleware('guest')->group(function () {
     Route::post('register', [RegisterController::class, "create"])->name('register.create');
 
     Route::post('/login', [LoginController::class, "login"])->name('login');
+
+    Route::get('/', function () {
+        return Auth::check() ? redirect()->route('dashboard') : view('auth.login');
+    })->name('home');
 });
