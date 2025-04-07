@@ -1,5 +1,9 @@
 # Teste Prático Laravel
 
+## Requisitos
+
+- Docker instalado na máquina
+
 ## Como rodar a aplicação
 
 1. Clone o repositório
